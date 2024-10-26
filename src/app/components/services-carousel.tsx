@@ -11,29 +11,12 @@ import {
 } from "@/components/ui/carousel";
 import Link from "next/link";
 import { ServicesIcon } from "./services-icon";
-import { Service } from "../types/service";
-
-// URL del JSON
-const DATA_URL = "https://react-frontend.pages.dev/slides.json";
+import { useSlides } from "../context/SlidesContext";
 
 export const ServicesCarousel = () => {
-  const [slides, setSlides] = useState<null | Service[]>([]);
+  const { slides } = useSlides();
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    const fetchSlides = async () => {
-      try {
-        const response = await fetch(DATA_URL);
-        const data = await response.json();
-        setSlides(data);
-      } catch (error) {
-        console.error("Error al obtener los datos del carrusel:", error);
-      }
-    };
-
-    fetchSlides();
-  }, []);
 
   useEffect(() => {
     if (!api) {

@@ -226,9 +226,9 @@ const CarouselPrevious = React.forwardRef<
         <path
           d="M18 2L2.78402 14.9783C1.84788 15.7768 1.84788 17.2232 2.78402 18.0217L18 31"
           stroke="#2E53A3"
-          stroke-width="3"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
 
@@ -271,9 +271,9 @@ const CarouselNext = React.forwardRef<
         <path
           d="M2 31L17.216 18.0217C18.1521 17.2232 18.1521 15.7768 17.216 14.9783L2 2"
           stroke="#2E53A3"
-          stroke-width="3"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
 

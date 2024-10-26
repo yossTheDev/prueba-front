@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { Header } from "./components/header";
 import { fontSans, geistMono } from "./lib/fonts";
+import { SlidesProvider } from "./context/SlidesContext";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,8 +21,10 @@ export default function RootLayout({
       <body
         className={`${fontSans.variable} ${fontSans.className} ${geistMono.variable} antialiased`}
       >
-        <Header></Header>
-        {children}
+        <SlidesProvider>
+          <Header></Header>
+          {children}
+        </SlidesProvider>
       </body>
     </html>
   );
