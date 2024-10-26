@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { LanguageButton } from "./language-button";
+import { getTranslations } from "next-intl/server";
 
-export const Header = () => {
+export const Header = async () => {
+  const t = await getTranslations("Navigation");
+
   return (
     <div className="sticky lg:fixed lg:top-5 top-0 w-full flex justify-center z-50">
       <header className="w-full lg:w-[80%] bg-white lg:shadow-md lg:rounded">
@@ -10,22 +13,22 @@ export const Header = () => {
             {/* Navegación principal */}
             <nav className="flex space-x-8">
               <Link className="text-blue-600 font-semibold" href="/">
-                INICIO
+                {t("home")}
               </Link>
 
               {/* Links adicionales ocultos en móviles */}
               <div className="hidden lg:flex space-x-8">
                 <Link className="text-blue-600 font-semibold" href="/services">
-                  SERVICIOS
+                  {t("services")}
                 </Link>
                 <Link className="text-blue-600 font-semibold" href="/about">
-                  NOSOTROS
+                  {t("aboutus")}
                 </Link>
                 <Link className="text-blue-600 font-semibold" href="/tools">
-                  HERRAMIENTAS
+                  {t("tools")}
                 </Link>
                 <Link className="text-blue-600 font-semibold" href="/partners">
-                  SOCIOS
+                  {t("partner")}
                 </Link>
               </div>
             </nav>
@@ -33,7 +36,7 @@ export const Header = () => {
             {/* Botones de "Contactar" y cambio de idioma */}
             <div className="flex items-center space-x-4">
               <button className="bg-blue-600 text-white px-4 py-2 rounded-full">
-                Contactar
+                {t("contact")}
               </button>
               <LanguageButton></LanguageButton>
             </div>

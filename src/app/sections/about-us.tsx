@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import { useSlides } from "../context/SlidesContext";
+import { useTranslations } from "next-intl";
 
 export const AboutUs = () => {
+  const t = useTranslations("HomePage.AboutUs");
   const { slides } = useSlides();
   return (
     <section className="mt-20 flex flex-col md:flex-row items-center justify-center gap-12 py-8 px-8 lg:px-28 bg-white">
@@ -20,7 +22,7 @@ export const AboutUs = () => {
       <div className="flex md:w-1/2 flex-col items-start md:items-end md:text-end text-start">
         <h2 className="text-blue-600 font-bold">SOBRE NOSOTROS</h2>
         <h3 className="md:text-4xl text-2xl font-semibold mt-2">
-          Traduce solo este título <br></br> maravilloso y el navbar
+          {t("title")}
         </h3>
         <p className="text-gray-600 text-sm md:text-lg mt-4 md:w-[80%]">
           Usted debe tener un sólido conocimiento de HTML y CSS. Debe comprender
