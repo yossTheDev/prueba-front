@@ -5,7 +5,7 @@ export const Services = () => {
     <section className="mt-20 flex flex-col md:flex-row items-center justify-center gap-12 py-8 lg:px-28 bg-white">
       <div className="flex-1">
         <h2 className="text-blue-600 font-bold">SERVICIOS</h2>
-        <h3 className="text-2xl font-bold mt-2">
+        <h3 className="text-4xl font-semibold mt-2">
           Esta info te llega desde <br></br> un servicio externo
         </h3>
         <p className="text-gray-700 mt-4 w-[80%]">
