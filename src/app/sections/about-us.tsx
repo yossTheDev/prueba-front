@@ -9,7 +9,7 @@ export const AboutUs = () => {
     <section className="mt-20 flex flex-col md:flex-row items-center justify-center gap-12 py-8 px-8 lg:px-28 bg-white">
       <div className="w-1/2 items-center justify-center flex flex-col">
         <Image
-          src="/about-us.png"
+          src="/about-us.webp"
           alt="Nosotros"
           width={500}
           height={400}

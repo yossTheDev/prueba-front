@@ -20,7 +20,7 @@ export const Hero = () => {
         {/* Imagen de fondo */}
         <img
           className="absolute scale-75 opacity-30 top-0 -mt-16 lg:opacity-40 lg:-mt-28 w-full lg:w-auto"
-          src="/group.png"
+          src="/group.webp"
           alt="Hero Texture"
         />
 
@@ -29,7 +29,7 @@ export const Hero = () => {
           <img
             className="w-4/5 sm:w-[85%] md:w-3/4 lg:w-[95%] lg:absolute bottom-0 lg:bottom-auto lg:mt-52"
             alt="hero image"
-            src="/hero.png"
+            src="/hero.webp"
           />
         </div>
       </div>
