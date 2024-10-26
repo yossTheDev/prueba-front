@@ -11,7 +11,7 @@ export const Hero = () => {
           <p className="text-xs leading-5 sm:text-base lg:leading-6 sm:leading-[22.1px] text-neutral-300 mt-4 sm:mt-6 lg:mt-8 w-full sm:w-4/5">
             Debes usar <strong>NextJS</strong> y <strong>Tailwind CSS</strong>.
             Cada sección de la página debe ser un componente individual. Usa el
-            módulo <strong> next-intl</strong>para internacionalización. Usa la
+            módulo <strong>next-intl</strong> para internacionalización. Usa la
             imaginación para desarrollar el <strong>responsive</strong> de la
             versión móvil.
           </p>
