@@ -14,7 +14,7 @@ export const Header = async () => {
 
   return (
     <div className="sticky lg:fixed lg:top-5 top-0 w-full flex justify-center z-50">
-      <header className="w-full lg:w-[80%] bg-white lg:shadow-md lg:rounded">
+      <header className="w-full lg:w-[80%] bg-white shadow-md lg:rounded">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             {/* Navegación principal */}
