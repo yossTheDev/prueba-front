@@ -35,16 +35,16 @@ export const ServicesCarousel = () => {
       <Carousel
         setApi={setApi}
         opts={{ dragFree: false }}
-        className="h-full w-full "
+        className="h-full w-full"
       >
-        <CarouselContent className="">
+        <CarouselContent className="p-2 ">
           {slides?.map((slide) => (
-            <CarouselItem key={slide.id} className="basis-1/2 ">
+            <CarouselItem key={slide.id} className="md:basis-1/2">
               <div
-                className={`bg-white shadow-md rounded-lg p-6 h-full flex-1 flex-col text-start transition-all ${
+                className={`rounded-lg p-6 h-full flex-1 flex-col text-start transition-all ${
                   current === parseInt(slide.id)
-                    ? "opacity-100 bg-[#2E53A3] text-white"
-                    : "opacity-50 text-[#2E53A3]"
+                    ? "opacity-100 bg-[#2E53A3] text-white shadow-lg"
+                    : "opacity-50 text-[#2E53A3] bg-white shadow-md"
                 }`}
               >
                 <div className="mb-4">

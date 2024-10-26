@@ -6,7 +6,7 @@ import { useSlides } from "../context/SlidesContext";
 export const AboutUs = () => {
   const { slides } = useSlides();
   return (
-    <section className="mt-20 flex flex-col md:flex-row items-center justify-center gap-12 py-8 lg:px-28 bg-white">
+    <section className="mt-20 flex flex-col md:flex-row items-center justify-center gap-12 py-8 px-8 lg:px-28 bg-white">
       <div className="w-1/2 items-center justify-center flex flex-col">
         <Image
           src="/about-us.png"
@@ -17,12 +17,12 @@ export const AboutUs = () => {
         />
       </div>
 
-      <div className="flex w-1/2 flex-col items-end text-end">
+      <div className="flex md:w-1/2 flex-col items-center md:items-end md:text-end text-center">
         <h2 className="text-blue-600 font-bold">SOBRE NOSOTROS</h2>
-        <h3 className="text-4xl font-semibold mt-2">
+        <h3 className="md:text-4xl text-2xl font-semibold mt-2">
           Traduce solo este título <br></br> maravilloso y el navbar
         </h3>
-        <p className="text-gray-600 text-lg mt-4 w-[80%]">
+        <p className="text-gray-600 text-sm md:text-lg mt-4 md:w-[80%]">
           Usted debe tener un sólido conocimiento de HTML y CSS. Debe comprender
           la arquitectura de componentes de React. Debe tener buena atención al
           detalle, organización del código, habilidades de comunicación efectiva
