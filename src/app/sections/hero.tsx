@@ -17,7 +17,7 @@ export const Hero = () => {
           </p>
         </div>
 
-        {/* Imagen de fondo con opacidad */}
+        {/* Imagen de fondo */}
         <img
           className="absolute scale-75 opacity-30 top-0 -mt-16 lg:opacity-40 lg:-mt-28 w-full lg:w-auto"
           src="/group.png"
