@@ -17,7 +17,7 @@ export const AboutUs = () => {
         />
       </div>
 
-      <div className="flex md:w-1/2 flex-col items-center md:items-end md:text-end text-center">
+      <div className="flex md:w-1/2 flex-col items-start md:items-end md:text-end text-start">
         <h2 className="text-blue-600 font-bold">SOBRE NOSOTROS</h2>
         <h3 className="md:text-4xl text-2xl font-semibold mt-2">
           Traduce solo este título <br></br> maravilloso y el navbar
@@ -30,7 +30,7 @@ export const AboutUs = () => {
         </p>
 
         {/* Items */}
-        <div className="flex items-end flex-col gap-2 mt-4">
+        <div className="flex items-start lg:items-end flex-col gap-2 mt-4">
           {slides?.map((slide, index) => (
             <div
               className="flex gap-2 items-center text-[#606060]"
@@ -39,6 +39,7 @@ export const AboutUs = () => {
               <p>{slide.title}</p>
 
               <svg
+                className="portrait:order-first"
                 width="19"
                 height="19"
                 viewBox="0 0 19 19"
