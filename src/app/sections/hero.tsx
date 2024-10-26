@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
+
 export const Hero = () => {
   return (
     <>
-      <div className="bg-[#001853] h-[30rem] grid grid-cols-2 relative ">
+      <div className="bg-[#001853] h-[34rem] pt-4 grid grid-cols-2 relative ">
         <div className="flex flex-col items-start justify-center px-16">
           <h1 className="font-extrabold text-[64px] leading-[64px] text-white">
             Es tiempo <br></br> de maquetar{" "}
@@ -15,13 +17,17 @@ export const Hero = () => {
           </p>
         </div>
         <img
-          className="absolute scale-75 opacity-40 top-0 -mt-40"
+          className="absolute scale-75 opacity-40 top-0 -mt-28"
           src="/group.png"
           alt="Hero Texture"
         ></img>
 
         <div className="relative flex items-center  justify-end">
-          <img className="w-[95%] absolute mt-52 " src="/hero.png"></img>
+          <img
+            className="w-[95%] absolute mt-52"
+            alt="hero image"
+            src="/hero.png"
+          ></img>
         </div>
       </div>
       <svg
