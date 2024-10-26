@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LanguageButton } from "./language-button";
 
 export const Header = () => {
   return (
@@ -34,7 +35,7 @@ export const Header = () => {
               <button className="bg-blue-600 text-white px-4 py-2 rounded-full">
                 Contactar
               </button>
-              <span className="lg:inline text-gray-700">🇬🇧</span>
+              <LanguageButton></LanguageButton>
             </div>
           </div>
         </div>
