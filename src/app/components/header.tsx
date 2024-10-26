@@ -66,21 +66,27 @@ export const Header = async () => {
                 </SheetContent>
               </Sheet>
 
-              <Link className="text-blue-600 font-semibold" href="/">
+              <Link className="hover:text-blue-600 font-semibold" href="/">
                 {t("home")}
               </Link>
 
               <div className="hidden lg:flex space-x-8">
-                <Link className="text-blue-600 font-semibold" href="/services">
+                <Link
+                  className="hover:text-blue-600 font-semibold"
+                  href="/#services"
+                >
                   {t("services")}
                 </Link>
-                <Link className="text-blue-600 font-semibold" href="/about">
+                <Link
+                  className="hover:text-blue-600 font-semibold"
+                  href="/#about"
+                >
                   {t("aboutus")}
                 </Link>
-                <Link className="text-blue-600 font-semibold" href="/tools">
+                <Link className="hover:text-blue-600 font-semibold" href="/">
                   {t("tools")}
                 </Link>
-                <Link className="text-blue-600 font-semibold" href="/partners">
+                <Link className="hover:text-blue-600 font-semibold" href="/">
                   {t("partner")}
                 </Link>
               </div>

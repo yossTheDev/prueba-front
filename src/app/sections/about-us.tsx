@@ -8,7 +8,10 @@ export const AboutUs = () => {
   const t = useTranslations("HomePage.AboutUs");
   const { slides } = useSlides();
   return (
-    <section className="mt-20 flex flex-col md:flex-row items-center justify-center gap-12 py-8 px-8 lg:px-28 bg-white">
+    <section
+      id="about"
+      className="my-20 flex flex-col md:flex-row items-center justify-center gap-12 py-8 px-8 lg:px-28 bg-white"
+    >
       <div className="w-1/2 items-center justify-center flex flex-col">
         <Image
           src="/about-us.webp"
