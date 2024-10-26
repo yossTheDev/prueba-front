@@ -1,4 +1,4 @@
-export type Service = {
+export type Slide = {
     id: string;
     icon: string;
     title: string;

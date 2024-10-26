@@ -1,12 +1,12 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { Service } from "../types/service";
+import { Slide } from "../types/service";
 
 const DATA_URL = "https://react-frontend.pages.dev/slides.json";
 
 interface SlidesContextType {
-  slides: Service[] | null;
+  slides: Slide[] | null;
 }
 
 const SlidesContext = createContext<SlidesContextType | undefined>(undefined);
@@ -14,7 +14,7 @@ const SlidesContext = createContext<SlidesContextType | undefined>(undefined);
 export const SlidesProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [slides, setSlides] = useState<Service[] | null>(null);
+  const [slides, setSlides] = useState<Slide[] | null>(null);
 
   useEffect(() => {
     const fetchSlides = async () => {
