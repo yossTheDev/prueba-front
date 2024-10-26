@@ -4,7 +4,7 @@ export const Services = () => {
   return (
     <section className="mt-20 flex flex-col md:flex-row items-start justify-center gap-8 py-8 lg:px-28 bg-white">
       <div className="flex-1">
-        <h2 className="text-blue-600 font-semibold">SERVICIOS</h2>
+        <h2 className="text-blue-600 font-bold">SERVICIOS</h2>
         <h3 className="text-2xl font-bold mt-2">
           Esta info te llega desde un servicio externo
         </h3>
