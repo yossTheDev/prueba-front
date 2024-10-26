@@ -19,7 +19,7 @@ export const Hero = () => {
 
         {/* Imagen de fondo */}
         <img
-          className="absolute scale-75 opacity-30 top-0 -mt-16 lg:opacity-40 lg:-mt-28 w-full lg:w-auto"
+          className="absolute scale-150 mt-28 lg:scale-75 opacity-30 top-0  lg:opacity-40 lg:-mt-28 w-full lg:w-auto"
           src="/group.webp"
           alt="Hero Texture"
         />
