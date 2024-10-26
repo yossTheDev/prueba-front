@@ -26,7 +26,7 @@ export const Services = () => {
         </button>
       </div>
 
-      <div className="w-1/2">
+      <div className="w-1/2 items-center justify-center flex flex-col">
         <ServicesCarousel></ServicesCarousel>
       </div>
     </section>
