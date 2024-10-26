@@ -3,35 +3,40 @@
 export const Hero = () => {
   return (
     <>
-      <div className="bg-[#001853] h-[34rem] pt-4 grid grid-cols-2 relative ">
-        <div className="flex flex-col items-start justify-center px-16">
-          <h1 className="font-extrabold text-[64px] leading-[64px] text-white">
-            Es tiempo <br></br> de maquetar{" "}
+      <div className="bg-[#001853] h-[34rem] pt-16 lg:pt-4 grid lg:grid-cols-2 relative">
+        {/* Contenido del texto */}
+        <div className="flex flex-col items-center text-center lg:text-start lg:items-start justify-center px-8 lg:px-16">
+          <h1 className="font-extrabold text-2xl sm:text-4xl lg:text-[64px] lg:leading-[64px] text-white">
+            Es tiempo <br className="hidden lg:block" /> de maquetar
           </h1>
-
-          <p className=" text-[16px] leading-[22.1px] text-neutral-300 mt-8 w-4/5">
-            Debes usar NextJS y Tailwind CSS . Cada sección de la página debe
-            ser un componente individual. Usa el módulo next-intl para
+          <p className="text-sm sm:text-base leading-6 sm:leading-[22.1px] text-neutral-300 mt-4 sm:mt-6 lg:mt-8 w-full sm:w-4/5">
+            Debes usar NextJS y Tailwind CSS. Cada sección de la página debe ser
+            un componente individual. Usa el módulo next-intl para
             internacionalización. Usa la imaginación para desarrollar el
             responsive de la versión móvil.
           </p>
         </div>
+
+        {/* Imagen de fondo con opacidad */}
         <img
-          className="absolute scale-75 opacity-40 top-0 -mt-28"
+          className="absolute scale-75 opacity-30 top-0 -mt-16 lg:opacity-40 lg:-mt-28 w-full lg:w-auto"
           src="/group.png"
           alt="Hero Texture"
-        ></img>
+        />
 
-        <div className="relative flex items-center  justify-end">
+        {/* Imagen del Hero*/}
+        <div className="order-first lg:order-none relative flex items-center justify-center lg:justify-end mb-12 lg:mb-0">
           <img
-            className="w-[95%] absolute mt-52"
+            className="w-4/5 sm:w-[85%] md:w-3/4 lg:w-[95%] absolute bottom-0 lg:bottom-auto lg:mt-52"
             alt="hero image"
             src="/hero.png"
-          ></img>
+          />
         </div>
       </div>
+
+      {/* Separador*/}
       <svg
-        className="-mt-10 ml-64"
+        className="-mt-10 ml-64 portrait:mx-auto"
         width="119"
         height="85"
         viewBox="0 0 119 85"
