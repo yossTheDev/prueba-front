@@ -3,7 +3,7 @@
 export const Hero = () => {
   return (
     <>
-      <div className="bg-[#001853] lg:h-[34rem] h-[36rem] pt-16 lg:pt-4 grid lg:grid-cols-2 relative">
+      <div className="bg-[#001853] lg:h-[34rem] h-[36rem] pt-16 lg:pt-4 grid lg:grid-cols-2 relative overflow-hidden lg:overflow-visible">
         {/* Contenido del texto */}
         <div className="flex flex-col  portrait:h-fit items-center text-center lg:text-start lg:items-start justify-center px-8 lg:px-16">
           <h1 className="font-extrabold portrait:mt-2 text-4xl sm:text-4xl lg:text-[64px] lg:leading-[64px] text-white">
