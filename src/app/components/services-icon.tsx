@@ -3,7 +3,7 @@ export const ServicesIcon = ({ id }: { id: number }) => {
     case 1:
       return (
         <svg
-          className="size-12 mx-auto"
+          className="size-12"
           width="96"
           height="96"
           viewBox="0 0 96 96"
@@ -44,7 +44,7 @@ export const ServicesIcon = ({ id }: { id: number }) => {
     case 2:
       return (
         <svg
-          className="size-12 mx-auto"
+          className="size-12"
           width="97"
           height="95"
           viewBox="0 0 97 95"
@@ -101,7 +101,7 @@ export const ServicesIcon = ({ id }: { id: number }) => {
     case 3:
       return (
         <svg
-          className="size-12 mx-auto"
+          className="size-12"
           width="102"
           height="101"
           viewBox="0 0 102 101"
