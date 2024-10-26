@@ -1,6 +1,13 @@
 import Link from "next/link";
 import { LanguageButton } from "./language-button";
 import { getTranslations } from "next-intl/server";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 export const Header = async () => {
   const t = await getTranslations("Navigation");
@@ -12,11 +19,57 @@ export const Header = async () => {
           <div className="flex justify-between items-center py-4">
             {/* Navegación principal */}
             <nav className="flex space-x-8">
+              <Sheet>
+                <SheetTrigger className="lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <line x1="4" x2="20" y1="12" y2="12" />
+                    <line x1="4" x2="20" y1="6" y2="6" />
+                    <line x1="4" x2="20" y1="18" y2="18" />
+                  </svg>
+                </SheetTrigger>
+                <SheetContent side={"left"}>
+                  <SheetHeader>
+                    <SheetTitle>Menú</SheetTitle>
+
+                    <Link
+                      className="text-blue-600 font-semibold"
+                      href="/services"
+                    >
+                      {t("services")}
+                    </Link>
+                    <Link
+                      className="text-blue-600 font-semibold"
+                      href="/#about"
+                    >
+                      {t("aboutus")}
+                    </Link>
+                    <Link
+                      className="text-blue-600 font-semibold"
+                      href="/#tools"
+                    >
+                      {t("tools")}
+                    </Link>
+                    <Link className="text-blue-600 font-semibold" href="/">
+                      {t("partner")}
+                    </Link>
+                  </SheetHeader>
+                </SheetContent>
+              </Sheet>
+
               <Link className="text-blue-600 font-semibold" href="/">
                 {t("home")}
               </Link>
 
-              {/* Links adicionales ocultos en móviles */}
               <div className="hidden lg:flex space-x-8">
                 <Link className="text-blue-600 font-semibold" href="/services">
                   {t("services")}
